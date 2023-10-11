@@ -1,3 +1,3 @@
-module "vpc" {
-    source = "git::https://github.com/venurao/DevOps.git//vpc"
-}
+# module "vpc" {
+#     source = "git::https://github.com/venurao/DevOps.git//vpc"
+# }
