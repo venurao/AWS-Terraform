@@ -1,0 +1,20 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-2" //US East (Ohio)
+}
+
+
+resource "aws_instance" "web" {
+  ami = "ami-036f5574583e16426"
+  instance_type = "t2.micro"
+
+}
